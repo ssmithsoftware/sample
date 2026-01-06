@@ -2,7 +2,7 @@
 
 ## api/
 
-A set of Node.js modules used for bootstrapping a lightweight Fastify REST API
+A set of Node.js modules used for bootstrapping a lightweight REST API.
 
 ## cli/
 
@@ -12,7 +12,7 @@ alternative for headless cloud environments.
 
 ## frame/
 
-A set of HTML Web Components used for complex Single Page Application routing, AJAX form
+An extensible set of HTML Web Components used for complex Single Page Application routing, AJAX form
 submissions, and basic input controls.
 
 ## schema/
