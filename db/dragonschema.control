@@ -1,8 +1,0 @@
-# dragonschema extension
-
-comment = 'Converts PostgreSQL functions to native Javascript functions with Typescript support and JSON Schema validation'
-default_version = '1.0'
-module_pathname = 'dragonschema'
-relocatable = false
-schema = 'ss'
-trusted = true
