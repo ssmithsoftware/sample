@@ -19,3 +19,13 @@ submissions, and basic input controls.
 
 A PostgreSQL extension used to generate JSON Schema from native PostgreSQL
 Functions.
+
+### Note
+
+Some modules included in this repository have been extracted from private
+repositories maintained by ssmith software.
+
+If you are interested in learning more about any of the modules listed in this
+repository, send an email to:
+
+scottadamsmith1@gmail.com
