@@ -1,0 +1,25 @@
+{
+	"name": "@dragonapi/env",
+	"author": "Scott Smith - ssmithsoftware 2025",
+	"license": "MIT",
+	"type": "module",
+	"version": "1.0.0",
+	"exports": {
+		".": {
+			"import": "./src/index.js",
+			"types": "./dist/types.d.ts"
+		}
+	},
+	"scripts": {
+		"types": "mkdir -p dist && rm -r dist && tsc"
+	},
+	"devDependencies": {
+		"@types/node": "catalog:lib",
+		"fastify": "catalog:api"
+	},
+	"dependencies": {
+		"@fastify/env": "catalog:api",
+		"dragonenv": "workspace:*",
+		"fastify-plugin": "catalog:api"
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"name": "@ssmithsoftware/web",
+	"author": "Scott Smith - ssmithsoftware 2024",
+	"license": "MIT",
+	"private": true,
+	"type": "module",
+	"version": "1.0.0",
+	"exports": {
+		".": {
+			"import": "./src/index.js",
+			"types": "./dist/index.d.ts"
+		},
+		"./elements/*": {
+			"import": "./src/elements/*.js",
+			"types": "./dist/elements/*.d.ts"
+		},
+		"./server": {
+			"import": "./src/server.js",
+			"types": "./dist/server.d.ts"
+		},
+		"./types": {
+			"types": "./dist/types.d.ts"
+		}
+	},
+	"scripts": {
+		"types": "mkdir -p dist && rm -r dist && tsc"
+	},
+	"devDependencies": {
+		"@types/node": "catalog:lib"
+	},
+	"dependencies": {
+		"dragonenv": "workspace:*",
+		"esbuild": "catalog:web",
+		"fast-xml-parser": "catalog:lib",
+		"vite": "catalog:web"
+	}
+}
