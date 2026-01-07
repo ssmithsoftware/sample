@@ -4,17 +4,17 @@ import type { CookiePluginType } from './index.js'
 import cookiePlugin from './index.js'
 
 declare module 'fastify' {
-	interface FastifyContextConfig {
-		signed?: boolean
-	}
+  interface FastifyContextConfig {
+    signed?: boolean
+  }
 
-	interface FastifyInstance {
-		cookie: CookiePluginType
-	}
+  interface FastifyInstance {
+    cookie: CookiePluginType
+  }
 
-	interface FastifyRequest {
-		unsigned: UnsignResult | null
-	}
+  interface FastifyRequest {
+    unsigned: UnsignResult | null
+  }
 }
 
 export default cookiePlugin

@@ -1,24 +1,24 @@
 {
-	"name": "@ssmithsoftware/api-stripe",
-	"author": "Scott Smith - ssmithsoftware 2024",
-	"license": "MIT",
-	"type": "module",
-	"version": "1.0.0",
-	"exports": {
-		".": {
-			"import": "./src/index.js",
-			"types": "./dist/types.d.ts"
-		}
-	},
-	"scripts": {
-		"types": "mkdir -p dist && rm -r dist && tsc"
-	},
-	"devDependencies": {
-		"@types/node": "catalog:lib",
-		"fastify": "catalog:api"
-	},
-	"dependencies": {
-		"fastify-plugin": "catalog:api",
-		"stripe": "catalog:api"
-	}
+  "name": "@ssmithsoftware/api-stripe",
+  "author": "Scott Smith - ssmithsoftware 2024",
+  "license": "MIT",
+  "type": "module",
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "scripts": {
+    "types": "mkdir -p dist && rm -r dist && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:lib",
+    "fastify": "catalog:api"
+  },
+  "dependencies": {
+    "fastify-plugin": "catalog:api",
+    "stripe": "catalog:api"
+  }
 }

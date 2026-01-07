@@ -1,26 +1,26 @@
 {
-	"name": "@dragonapi/build",
-	"author": "Scott Smith - ssmithsoftware 2025",
-	"license": "MIT",
-	"type": "module",
-	"version": "1.0.0",
-	"exports": {
-		".": {
-			"import": "./src/index.js",
-			"types": "./dist/types.d.ts"
-		}
-	},
-	"scripts": {
-		"types": "mkdir -p dist && rm -r dist && tsc"
-	},
-	"devDependencies": {
-		"@types/node": "catalog:lib"
-	},
-	"dependencies": {
-		"@fastify/autoload": "catalog:api",
-		"@fastify/one-line-logger": "catalog:api",
-		"@fastify/sensible": "catalog:api",
-		"close-with-grace": "catalog:api",
-		"fastify": "catalog:api"
-	}
+  "name": "@dragonapi/build",
+  "author": "Scott Smith - ssmithsoftware 2025",
+  "license": "MIT",
+  "type": "module",
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "scripts": {
+    "types": "mkdir -p dist && rm -r dist && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:lib"
+  },
+  "dependencies": {
+    "@fastify/autoload": "catalog:api",
+    "@fastify/one-line-logger": "catalog:api",
+    "@fastify/sensible": "catalog:api",
+    "close-with-grace": "catalog:api",
+    "fastify": "catalog:api"
+  }
 }

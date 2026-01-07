@@ -3,9 +3,9 @@ import type { StripePluginOptions } from './index.js'
 import stripePlugin from './index.js'
 
 declare module 'fastify' {
-	interface FastifyInstance {
-		stripe: Stripe
-	}
+  interface FastifyInstance {
+    stripe: Stripe
+  }
 }
 
 export type { Stripe, StripePluginOptions }

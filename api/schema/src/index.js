@@ -9,27 +9,21 @@
 import DragonSchema from 'dragonschema'
 import fastifyPlugin from 'fastify-plugin'
 
-const schemaPlugin = /** @type {FastifyPluginAsync<SchemaPluginOptions>} */ (
-	fastifyPlugin(
-		/**
-		 * @param {FastifyInstance} app
-		 * @param {SchemaPluginOptions} options
-		 */
-		async function (app, { build, pool }) {
-			const sSchema = new DragonSchema({ pool })
+const schemaPlugin = /** @type {FastifyPluginAsync<SchemaPluginOptions>} */ (fastifyPlugin(
+  /**
+   * @param {FastifyInstance} app
+   * @param {SchemaPluginOptions} options
+   */
+  async function (app, { build, pool }) {
+    const sSchema = new DragonSchema({ pool })
 
-			const { reference, schema } = await sSchema.build(build)
+    const { reference, schema } = await sSchema.build(build)
 
-			app.addSchema(schema)
-				.decorate('reference', reference)
-				.decorate('select', sSchema.select.bind(sSchema))
-				.decorate('throw', sSchema.throw)
+    app.addSchema(schema).decorate('reference', reference).decorate('select', sSchema.select.bind(sSchema)).decorate('throw', sSchema.throw)
 
-			app.addHook('onClose', async function () {
-				await sSchema.destroy()
-			})
-		}
-	)
-)
+    app.addHook('onClose', async function () {
+      await sSchema.destroy()
+    })
+  }))
 
 export default schemaPlugin

@@ -5,30 +5,24 @@ import fastify from 'fastify'
 import { exit } from 'process'
 
 /** @param {number} [port] */
-export default function build(port = 5000) {
-	const app = fastify({
-		logger: { transport: { target: '@fastify/one-line-logger' } }
-	})
+export default function build (port = 5000) {
+  const app = fastify({ logger: { transport: { target: '@fastify/one-line-logger' } } })
 
-	app.register(fastifyAutoload, {
-		dir: 'src/plugins',
-		encapsulate: false,
-		forceESM: true
-	})
-	app.register(fastifyAutoload, { dir: 'src/routes', forceESM: true })
-	app.register(fastifySensible)
+  app.register(fastifyAutoload, { dir: 'src/plugins', encapsulate: false, forceESM: true })
+  app.register(fastifyAutoload, { dir: 'src/routes', forceESM: true })
+  app.register(fastifySensible)
 
-	closeWithGrace(async function ({ err }) {
-		if (err) throw err
+  closeWithGrace(async function ({ err }) {
+    if (err) throw err
 
-		await app.close()
-	})
+    await app.close()
+  })
 
-	app.listen({ port }, function (err) {
-		if (err) {
-			app.log.error(err)
+  app.listen({ port }, function (err) {
+    if (err) {
+      app.log.error(err)
 
-			exit(1)
-		}
-	})
+      exit(1)
+    }
+  })
 }
