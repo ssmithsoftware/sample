@@ -1,0 +1,1 @@
+SELECT "interface", "query", "reference", "schema" FROM ss.get_schemas((SELECT json_populate_record(NULL::ss.t_get_schema_option, ss._snake($1::json)))) f ("interface", "query", "reference", "schema");
