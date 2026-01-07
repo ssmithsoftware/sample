@@ -2,23 +2,31 @@
 
 ## api/
 
-A set of Node.js modules used for bootstrapping a lightweight REST API.
+A set of Node.js modules used to bootstrap a lightweight REST API.
 
-## cli/
+## archlinux/
 
-A set of Shell scripts used for bootstrapping an Arch Linux-based Desktop
+A collection of Shell scripts used to bootstrap a Linux Desktop
 Environment for local development and a lightweight virtual machine image
-alternative for headless cloud environments.
+alternative for cloud environments.
 
-## frame/
-
-An extensible set of HTML Web Components used for complex Single Page Application routing, AJAX form
-submissions, and basic input controls.
-
-## schema/
+## db/
 
 A PostgreSQL extension used to generate JSON Schema from native PostgreSQL
 Functions.
+
+## env/
+
+A Node.js module for generating local .env files with shared application data.
+
+## schema/
+
+A Node.js module that
+
+## web/
+
+A modern, dependency-free vanilla JS web client library built entirely upon HTML
+Web Components Web APIs.
 
 ### Developer Note
 
