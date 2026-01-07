@@ -1,4 +1,4 @@
-# Sample Repository of the dr9n Software Suite
+# Sample Repository of the dr9n Framework
 
 ## api/
 
