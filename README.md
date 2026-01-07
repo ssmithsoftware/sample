@@ -13,7 +13,7 @@ environments.
 ## db/
 
 A PostgreSQL extension used to generate JSON Schema and the additional metadata
-files needed to create simple Javascript functions from native PostgreSQL
+files needed to create simple JavaScript functions from native PostgreSQL
 Functions.
 
 ## env/
@@ -27,7 +27,9 @@ A Node.js adapter module for the **dr9n** PostgreSQL extension.
 ## web/
 
 A modern, dependency-free vanilla JS web client library built entirely upon HTML
-Web Components Web APIs.
+Web Components Web APIs. Supports complex Single Page Application (SPA) routing,
+Asynchronous JavaScript and XML (AJAX) Form Submissions, and various extensible
+form controls and routing utilities.
 
 ### Developer Note
 
