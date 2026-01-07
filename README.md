@@ -1,4 +1,4 @@
-# Sample Repository of the dr9n Framework
+# Sample Repository of the **dr9n** Framework
 
 ## api/
 
@@ -22,7 +22,7 @@ A Node.js adapter module for generating local .env files with shared application
 
 ## schema/
 
-A Node.js adapter module for the dr9n PostgreSQL extension.
+A Node.js adapter module for the **dr9n** PostgreSQL extension.
 
 ## web/
 
