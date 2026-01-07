@@ -1,24 +1,24 @@
 {
-	"name": "dragonschema",
-	"author": "Scott Smith - ssmithsoftware 2025",
-	"license": "MIT",
-	"private": true,
-	"type": "module",
-	"version": "1.0.0",
-	"exports": {
-		".": {
-			"import": "./src/index.js",
-			"types": "./dist/types.d.ts"
-		}
-	},
-	"scripts": {
-		"types": "mkdir -p dist && rm -r dist && tsc"
-	},
-	"devDependencies": {
-		"@types/node": "catalog:lib",
-		"@types/pg": "catalog:lib"
-	},
-	"dependencies": {
-		"pg": "catalog:lib"
-	}
+  "name": "dragonschema",
+  "author": "Scott Smith - ssmithsoftware 2025",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./dist/types.d.ts"
+    }
+  },
+  "scripts": {
+    "types": "mkdir -p dist && rm -r dist && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:lib",
+    "@types/pg": "catalog:lib"
+  },
+  "dependencies": {
+    "pg": "catalog:lib"
+  }
 }
