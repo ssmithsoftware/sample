@@ -7,7 +7,7 @@ A set of Node.js modules used to bootstrap a lightweight REST API.
 ## archlinux/
 
 A collection of Shell scripts used to bootstrap a Linux Desktop Environment for
-local development and a lightweight virtual machine image alternative for cloud
+local development and an alternative, lightweight virtual machine image for cloud
 environments.
 
 ## db/
