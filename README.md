@@ -14,7 +14,7 @@ environments.
 
 A PostgreSQL extension used to generate JSON Schema and the additional metadata
 files needed to create simple JavaScript functions from native PostgreSQL
-Functions.
+functions.
 
 ## env/
 
