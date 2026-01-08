@@ -33,7 +33,7 @@ form controls and routing utilities.
 
 ### Developer Note
 
-Modules included in this repository have been extracted from private
+Some modules included in this repository have been extracted from private
 repositories maintained by **ssmith software** and are therefore missing contextual
 modules.
 
