@@ -1,30 +1,30 @@
 # dr9n Framework Sample Repository
 
-## api/
+## api
 
 A set of Node.js modules used to bootstrap a lightweight REST API.
 
-## archlinux/
+## archlinux
 
 A collection of Shell scripts used to bootstrap a Linux Desktop Environment for
 local development and an alternative, lightweight virtual machine image for cloud
 environments.
 
-## db/
+## db
 
 A PostgreSQL extension used to generate JSON Schema and the additional metadata
 files needed to create simple JavaScript functions from native PostgreSQL
 functions.
 
-## env/
+## env
 
 A Node.js adapter module for generating local .env files with shared application data.
 
-## schema/
+## schema
 
 A Node.js adapter module for the **dr9n** PostgreSQL extension.
 
-## web/
+## web
 
 A modern, dependency-free vanilla JS web client library built entirely upon HTML
 Web Components Web APIs. Supports complex Single Page Application (SPA) routing,
